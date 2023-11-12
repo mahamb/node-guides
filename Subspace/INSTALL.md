@@ -26,7 +26,7 @@ Prefer single-threaded performance over higher cores count. A comparison of sing
 >- Use below script for quick installation, for processors since 2015."
 >-
 ```
-wget -O mahamb-subspace.sh https://raw.githubusercontent.com/mahamb/node-guides/main/Subspace/mahamb-subspace.sh?token=GHSAT0AAAAAACJUKBJEPJW5HGBVF5MQ5UBOZKQ6R5A && chmod +x mahamb-subspace.sh && ./mahamb-subspace.sh
+wget -O mahamb-subspace.sh https://raw.githubusercontent.com/mahamb/node-guides/main/Subspace/mahamb-subspace.sh && chmod +x mahamb-subspace.sh && ./mahamb-subspace.sh
 ```
 
 
