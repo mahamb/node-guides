@@ -1,4 +1,6 @@
 #!/bin/bash
+# Code credits goes to the original source. 
+# Special thanks to NodeGuru."
 
 exists()
 {
