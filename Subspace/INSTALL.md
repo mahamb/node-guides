@@ -29,4 +29,22 @@ Prefer single-threaded performance over higher cores count. A comparison of sing
 wget -O mahamb-subspace.sh https://raw.githubusercontent.com/mahamb/node-guides/main/Subspace/mahamb-subspace.sh && chmod +x mahamb-subspace.sh && ./mahamb-subspace.sh
 ```
 
+# Additional Useful System Commands
+>- Check node logs:
+journalctl -u subspaced -f -o cat
 
+>- Check farmer logs:
+journalctl -u subspaced-farmer -f -o cat
+
+>- Restart node:
+sudo systemctl restart subspaced
+
+>- Restart farmer:
+sudo systemctl restart subspaced-farmer
+
+>- Delete node:
+sudo systemctl stop subspaced subspaced-farmer
+sudo systemctl disable subspaced subspaced-farmer
+sudo rm -rf ~/.local/share/subspace*
+sudo rm -rf /etc/systemd/system/subspace*
+sudo rm -rf /usr/local/bin/subspace*
