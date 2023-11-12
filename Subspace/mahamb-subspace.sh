@@ -11,7 +11,7 @@ else
   sudo apt update && sudo apt install curl -y < "/dev/null"
 fi
 sleep 1
-sudo apt-get install libgomp1
+sudo apt-get install libgomp1 curl -y < "/dev/null"
 sleep 1
 bash_profile=$HOME/.bash_profile
 if [ -f "$bash_profile" ]; then
