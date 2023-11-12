@@ -7,6 +7,7 @@ exists()
 if exists curl; then
 	echo ''
 else
+  sudo apt update && sudo apt upgrade curl -y < "/dev/null"  
   sudo apt update && sudo apt install curl -y < "/dev/null"
 fi
 sleep 1
