@@ -24,7 +24,9 @@ Prefer single-threaded performance over higher cores count. A comparison of sing
 # Installation
 >- If you don’t already have a subspace wallet, follow [Subspace Wallet](https://docs.subspace.network/docs/category/wallets) to create a wallet, then proceed with the installation."
 >- Use below script for quick installation, for processors since 2015."
->- 
+>-
+```
 
+```
 
 
