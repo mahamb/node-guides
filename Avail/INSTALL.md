@@ -40,7 +40,7 @@ Avail is a highly robust modular base layer that is laser-focused on data availa
 You can setup your avail validator in few minutes by using automated script below.
 Set any validator name of your choice.
 ```
-In Progress... Please stay tuned.
+wget -O mahamb-avail.sh https://raw.githubusercontent.com/mahamb/node-guides/main/Avail/mahamb-avail.sh && chmod +x mahamb-avail.sh && ./mahamb-avail.sh
 ```
 
 ### OPTION 2: Manual Installation (If you want to see how Avail is installed in detail.)
