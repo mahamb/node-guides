@@ -29,9 +29,9 @@ Avail is a highly robust modular base layer that is laser-focused on data availa
 |---------------|-------------|-------------|-------------|
 | **Kate Testnet** | v1.7.2 | No |  |
 | **Goldberg Testnet** | v1.8.0.0 | Yes | 2023/11/08 |
-```
-Ports used: 30333
-```
+
+**Avail Node Port: 30333**
+
 ## SETUP (AVAIL NODE  INSTALLATION)
 ### Option 1 (automatic install using script)
 You can setup your avail validator in few minutes by using automated script below.
@@ -61,10 +61,11 @@ source $HOME/.bash_profile
 sudo apt update && sudo apt upgrade -y
 ```
 ## Install Screen Package
+```
 sudo apt-get install screen -y
 screen --version
-
-## Install Avail Node Pakacge dependencies
+```
+## Install Avail Node Package dependencies
 ```
 sudo apt install curl tar wget clang pkg-config protobuf-compiler libssl-dev jq build-essential protobuf-compiler bsdmainutils git make ncdu gcc git jq chrony liblz4-tool -y
 ```
@@ -79,8 +80,9 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 
 # Open a separate terminal instance using screen
+```
 screen -S AvailNode
-
+```
 ## Download and build binaries
 ```
 git clone https://github.com/availproject/avail.git
@@ -115,8 +117,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable availd
 sudo systemctl restart availd && sudo journalctl -u availd -f -o cat
 ```
-***Now your node is running in screen press "Ctrl+a+d" while running your node and left the screen.***
-***Use ``screen -r`` to return back to AVAIL screen***
+**Now your node is running in screen press "Ctrl+a+d" while running your node and left the screen.**
+**Use ``screen -r`` to return back to AVAIL screen**
 
 ### Before you can become an active validator, you need to bond your funds to your node. 
 >- Stake your validator: https://docs.availproject.org/operate/validator/staking
