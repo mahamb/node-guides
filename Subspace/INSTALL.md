@@ -31,20 +31,26 @@ wget -O mahamb-subspace.sh https://raw.githubusercontent.com/mahamb/node-guides/
 
 # Additional Useful System Commands
 >- Check node logs:
+```
 journalctl -u subspaced -f -o cat
-
+```
 >- Check farmer logs:
+```
 journalctl -u subspaced-farmer -f -o cat
-
+```
 >- Restart node:
+```
 sudo systemctl restart subspaced
-
+```
 >- Restart farmer:
+```
 sudo systemctl restart subspaced-farmer
-
+```
 >- Delete node:
+```
 sudo systemctl stop subspaced subspaced-farmer
 sudo systemctl disable subspaced subspaced-farmer
 sudo rm -rf ~/.local/share/subspace*
 sudo rm -rf /etc/systemd/system/subspace*
 sudo rm -rf /usr/local/bin/subspace*
+```
