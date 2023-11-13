@@ -121,7 +121,7 @@ Use ``screen -r`` to return back to AVAIL screen.**
 
 ## Becomning an Active Validator
 >- To become an active validator, need to bond funds (avl tokens) into your node. You can request from goldberg faucet channel _https://discord.com/channels/1065831819154563132/1171414018028740698_. But for now, the team will select and send the 1000 Avail tokens need to bond into your node so you can initialize your node as Validator.
->- Stake your validator: https://docs.availproject.org/operate/validator/staking
+>- Staking AVL tokens in your validator: https://docs.availproject.org/operate/validator/staking
 
 ## Avail Explorers:
 >- https://telemetry.avail.tools
