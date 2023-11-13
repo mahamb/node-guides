@@ -147,3 +147,9 @@ ufw allow 3033
 ufw allow 9933
 ufw allow 9615
 ```
+
+## Disclaimer:
+The information provided in this Avail Node user guide is intended for educational and informational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the author and contributors assume no responsibility for errors or omissions.
+Users are encouraged to exercise caution and discretion while following the instructions outlined in this guide. It is important to verify commands and configurations in a non-production environment before applying them to critical systems.
+The author and contributors shall not be held liable for any damages, losses, or issues arising from the use of the information provided in this guide. Users are advised to consult with qualified professionals and refer to official documentation for their specific Avail Official Documentations and relevant systems when in doubt.
+By proceeding with the use of this guide, you acknowledge and accept the terms of this disclaimer.
