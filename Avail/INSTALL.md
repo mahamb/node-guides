@@ -1,6 +1,6 @@
 # Avail Validator Installation Guide
 
-# Official documentation:
+# Official documentation is available here:
 >- https://docs.availproject.org/
 >- https://github.com/availproject/avail
 
