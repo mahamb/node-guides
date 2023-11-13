@@ -60,7 +60,7 @@ source $HOME/.bash_profile
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-## Install Screen
+## Install Screen Package
 sudo apt-get install screen -y
 screen --version
 
@@ -78,7 +78,7 @@ rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 
-**Use ``screen -S`` to open a separate terminal instance**
+# Open a separate terminal instance using screen
 screen -S AvailNode
 
 ## Download and build binaries
@@ -90,8 +90,7 @@ git checkout v1.8.0.0
 cargo build --release -p data-avail
 sudo cp $HOME/avail/target/release/data-avail /usr/local/bin
 ```
-## Create Systemd Service
-## ***Moniker is your validator name***
+## Create Systemd Service (Autostart during bootup)
 ```
 sudo tee /etc/systemd/system/availd.service > /dev/null <<EOF
 [Unit]
@@ -109,7 +108,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-## Register and Start Availd Service (Autostart during bootup)
+## Register and Start Availd Service
 ```
 sudo systemctl restart systemd-journald
 sudo systemctl daemon-reload
