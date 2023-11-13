@@ -123,9 +123,9 @@ sudo systemctl restart availd && sudo journalctl -u availd -f -o cat
 ### Before you can become an active validator, you need to bond your funds to your node. 
 >- Stake your validator: https://docs.availproject.org/operate/validator/staking
 
-# Explorer:
+# Avail Explorers:
 >- https://telemetry.avail.tools
 >- https://goldberg.avail.tools
 
-# LeaderBoard:
+# Avail LeaderBoard:
 >- https://leaderboard.availproject.org
