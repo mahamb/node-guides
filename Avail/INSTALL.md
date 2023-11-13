@@ -134,3 +134,8 @@ But for now, the team will select and send the 1000 Avail tokens need to bond in
 
 ## Avail LeaderBoard:
 >- https://leaderboard.availproject.org
+
+## Security (Allow port 3033)
+```
+ufw allow 3033
+```
