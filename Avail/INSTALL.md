@@ -13,6 +13,9 @@ Avail is a highly robust modular base layer that is laser-focused on data availa
 # Submit your interest application form for Validator Node: 
 >- https://docs.google.com/forms/d/e/1FAIpQLScvgXjSUmwPpUxf1s-MR2C2o5V79TSoud1dLPKVgeLiLFuyGQ/viewform
 
+# Recommended Operating System 
+>- Ubuntu 22.04
+
 # Minimum Hardware Requirements 
 >- 4GB RAM
 >- 2core CPU (amd64/x86 architecture)
