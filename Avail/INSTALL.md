@@ -1,4 +1,4 @@
-# Avail Validator Installation Guide (Using Binaries)
+# Avail Full Node Installation Guide (Using Binaries)
 Avail is a highly robust modular base layer that is laser-focused on data availability: ordering, publishing transactions, and making it possible to seamlessly verify the availability of block data.
 
 **NOTE:** This guide is based on Avail Node version **v1.8.0.0**.
