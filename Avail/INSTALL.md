@@ -120,10 +120,10 @@ sudo systemctl restart availd && sudo journalctl -u availd -f -o cat
 Use ``screen -r`` to return back to AVAIL screen.**
 
 ## Becoming an Active Validator
->- To become an active validator, need to bond funds (avl tokens) into your node. You can request from goldberg faucet channel _https://discord.com/channels/1065831819154563132/1171414018028740698_.
+>- To become an active validator, you need to bond funds (AVL tokens) into your node. You can request from goldberg faucet channel _https://discord.com/channels/1065831819154563132/1171414018028740698_.
 You can request **every 3 hours** using the same wallet address and a **maximum of 100** AVL tokens every 13 days.
 But for now, the team will select and send the 1000 Avail tokens need to bond into your node so you can initialize your node as Validator.
->- Staking AVL tokens in your validator: https://docs.availproject.org/operate/validator/staking
+>- Staking AVL tokens to your validator node: https://docs.availproject.org/operate/validator/staking
 
 ## Avail Explorers:
 >- https://telemetry.avail.tools
