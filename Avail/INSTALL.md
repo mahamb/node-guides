@@ -122,6 +122,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable availd
 sudo systemctl restart availd && sudo journalctl -u availd -f -o cat
 ```
+You should see similar logs like below:
+![ alt text](https://github.com/mahamb/node-guides/blob/main/Avail/avail_status_logs.png)
 **Now your node is running in separate screen terminal. Press "Ctrl+a+d" while running your node and left the screen.
 Use ``screen -r`` to return back to AVAIL screen.**
 
