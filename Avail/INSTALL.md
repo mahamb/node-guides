@@ -33,19 +33,19 @@ Avail is a highly robust modular base layer that is laser-focused on data availa
 **Avail Node Port: 30333**
 
 ## SETUP (AVAIL NODE  INSTALLATION)
-### Option 1 (automatic install using script)
+### OPTION 1: Automatic install using bash script
 You can setup your avail validator in few minutes by using automated script below.
 Set any validator name of your choice.
 ```
-_In Progress... Please stay tuned._
+In Progress... Please stay tuned.
 ```
 
-### Option 2 (Manual Installation)
+### OPTION 2: Manual Installation (If you want to see how Avail is installed in detail.)
 ## Setup Variables
 ```
 cd $HOME
 ```
-Here you have to put name of your node name (validator) that will be visible in explorer
+Replace with your node name (validator) that will be visible in Avail explorers.
 ```
 NODENAME=<YOUR_NODE_NAME_GOES_HERE>
 ```
@@ -79,7 +79,7 @@ rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 
-# Open a separate terminal instance using screen
+## Open a separate terminal instance using screen
 ```
 screen -S AvailNode
 ```
@@ -120,12 +120,14 @@ sudo systemctl restart availd && sudo journalctl -u availd -f -o cat
 **Now your node is running in separate screen terminal. Press "Ctrl+a+d" while running your node and left the screen.**
 **Use ``screen -r`` to return back to AVAIL screen**
 
-### Before you can become an active validator, you need to bond your funds to your node. 
+## Before you can become an active validator, need to bond funds (avl tokens) into your node. 
+## You can request from goldberg faucet channel. _https://discord.com/channels/1065831819154563132/1171414018028740698_
+## But for now, the team will select and send the 1000 Avail tokens need to bone in order to initialize your node as Validator.
 >- Stake your validator: https://docs.availproject.org/operate/validator/staking
 
-# Avail Explorers:
+## Avail Explorers:
 >- https://telemetry.avail.tools
 >- https://goldberg.avail.tools
 
-# Avail LeaderBoard:
+## Avail LeaderBoard:
 >- https://leaderboard.availproject.org
