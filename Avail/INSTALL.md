@@ -117,7 +117,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable availd
 sudo systemctl restart availd && sudo journalctl -u availd -f -o cat
 ```
-**Now your node is running in screen press "Ctrl+a+d" while running your node and left the screen.**
+**Now your node is running in separate screen terminal. Press "Ctrl+a+d" while running your node and left the screen.**
 **Use ``screen -r`` to return back to AVAIL screen**
 
 ### Before you can become an active validator, you need to bond your funds to your node. 
