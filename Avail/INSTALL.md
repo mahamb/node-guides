@@ -49,7 +49,7 @@ In Progress... Please stay tuned.
 cd $HOME
 ```
 Replace with your node name (validator) that will be visible in Avail explorers.
->- NODENAME=<YOUR_NODE_NAME_GOES_HERE>
+>- NODENAME=<Set_the_value_with_your_Node_Name_in_below_NODENAME_variable>
 
 >- Save and import variables into system
 ```
