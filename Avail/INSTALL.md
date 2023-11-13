@@ -109,7 +109,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-## Register and start service
+## Register and Start Availd Service (Autostart during bootup)
 ```
 sudo systemctl restart systemd-journald
 sudo systemctl daemon-reload
