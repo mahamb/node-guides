@@ -94,11 +94,10 @@ git checkout v1.8.0.0
 cargo build --release -p data-avail
 sudo cp $HOME/avail/target/release/data-avail /usr/local/bin
 ```
-Wait for the downloading and compiling of packages to be completed...
-
+Wait for the downloading and compiling of packages to be completed
 ![ alt text](https://github.com/mahamb/node-guides/blob/main/Avail/cargo_run.png)
 
-Once you see your node start syncing as shown below, press Ctrl + C.
+Once you see your node start syncing as shown below, press Ctrl + C
 
 
 ## Create Systemd Service (Autostart during bootup)
@@ -119,7 +118,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-## Register and Start Availd Service
+## Register and Start Availd Service in SystemD
 ```
 sudo systemctl restart systemd-journald
 sudo systemctl daemon-reload
