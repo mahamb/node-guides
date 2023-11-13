@@ -46,9 +46,9 @@ In Progress... Please stay tuned.
 cd $HOME
 ```
 Replace with your node name (validator) that will be visible in Avail explorers.
--> NODENAME=<YOUR_NODE_NAME_GOES_HERE>
+>- NODENAME=<YOUR_NODE_NAME_GOES_HERE>
 
--> Save and import variables into system
+>- Save and import variables into system
 ```
 AVAIL_PORT=30333
 echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
