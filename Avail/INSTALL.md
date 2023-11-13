@@ -41,15 +41,14 @@ In Progress... Please stay tuned.
 ```
 
 ### OPTION 2: Manual Installation (If you want to see how Avail is installed in detail.)
-## Setup Variables
+## Setup Enrironment Variables
 ```
 cd $HOME
 ```
 Replace with your node name (validator) that will be visible in Avail explorers.
-```
-NODENAME=<YOUR_NODE_NAME_GOES_HERE>
-```
-Save and import variables into system
+-> NODENAME=<YOUR_NODE_NAME_GOES_HERE>
+
+-> Save and import variables into system
 ```
 AVAIL_PORT=30333
 echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
