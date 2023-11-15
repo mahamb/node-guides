@@ -15,8 +15,8 @@ Prefer single-threaded performance over higher cores count. A comparison of sing
 # Memory:
 >- 32 GB DDR4 ECC.
 
-# System:
->- Linux Kernel 5.16 or newer.
+# Operating System:
+>- Ubuntu 22.04.2 / Linux Kernel 5.16 or newer.
 
 # Network:
 >- The minimum symmetric networking speed is set to 500 Mbit/s.
