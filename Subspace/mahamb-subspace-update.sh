@@ -1,11 +1,17 @@
 #!/bin/bash
 sleep 1 && curl -s https://raw.githubusercontent.com/mahamb/logo/main/mahamb-logo.sh | bash && sleep 3
+echo "==================================================="
+echo -e '\n\e[42mStopping Subspace Farmer Service....\e[0m\n' && sleep 1
 cd $HOME
 systemctl stop subspaced-farmer
+echo -e '\n\e[42mStopping Subspace Node Service....\e[0m\n' && sleep 1
 sleep 120
 systemctl stop subspaced
+
+echo -e '\n\e[42mDeleting the old subspace bin files....\e[0m\n' && sleep 1
 rm -rf /usr/local/bin/*
 
+echo -e '\n\e[42mDownloading the loading subspace bin files....\e[0m\n' && sleep 1
 wget -O subspace-node https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-15/subspace-node-ubuntu-x86_64-skylake-gemini-3g-2023-nov-15
 wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-15/subspace-farmer-ubuntu-x86_64-skylake-gemini-3g-2023-nov-15
 
@@ -15,6 +21,7 @@ sudo mv subspace-farmer /usr/local/bin/
 
 sleep 5
 
+echo -e '\n\e[42mStarting the Subspace....\e[0m\n' && sleep 3
 systemctl start subspaced
 sleep 120
 systemctl start subspaced-farmer
