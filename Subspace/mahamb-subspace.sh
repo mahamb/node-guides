@@ -14,7 +14,7 @@ else
 fi
 sleep 1
 sudo apt-get install libgomp1 curl -y < "/dev/null"
-sleep 1
+sleep 2
 bash_profile=$HOME/.bash_profile
 if [ -f "$bash_profile" ]; then
     . $HOME/.bash_profile
@@ -75,7 +75,7 @@ sudo mv subspace-farmer /usr/local/bin/
 sudo systemctl stop subspaced subspaced-farmer &>/dev/null
 sudo rm -rf $HOME/.local/share/subspace*
 
-sleep 1
+sleep 3
 
 echo "[Unit]
 Description=Subspace Node
