@@ -37,7 +37,7 @@ else
 fi
 echo "==================================================="
 echo -e '\n\e[42mChecking farmer status\e[0m\n' && sleep 1
-if [[ `systemctl status subspaced-famer | grep active` =~ "running" ]]; then
+if [[ `systemctl status subspaced-farmer | grep active` =~ "running" ]]; then
   echo -e "Your Subspace farmer has been \e[32mupgraded and works\e[39m!"
   echo -e "You can check node status by the issung command \e[7msystemctl status subspaced-famers\e[0m"
   echo -e "Press \e[7mQ\e[0m to exit from status menu"
