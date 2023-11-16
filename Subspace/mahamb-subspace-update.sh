@@ -13,47 +13,11 @@ sudo chmod +x subspace-node subspace-farmer
 sudo mv subspace-node /usr/local/bin/
 sudo mv subspace-farmer /usr/local/bin/
 
-sudo systemctl stop subspaced subspaced-farmer &>/dev/null
-sudo rm -rf $HOME/.local/share/subspace*
+sleep 5
 
-sleep 1
-
-echo "[Unit]
-Description=Subspace Node
-After=network.target
-
-[Service]
-User=$USER
-Type=simple
-ExecStart=/usr/local/bin/subspace-node --base-path \"$SUBSPACE_NODE_PATH\" --chain gemini-3g --blocks-pruning 256 --state-pruning archive-canonical --no-private-ipv4 --validator --name $SUBSPACE_NODENAME
-Restart=on-failure
-LimitNOFILE=65535
-
-[Install]
-WantedBy=multi-user.target" > $HOME/subspaced.service
-
-echo "[Unit]
-Description=Subspaced Farm
-After=network.target
-
-[Service]
-User=$USER
-Type=simple
-ExecStart=/usr/local/bin/subspace-farmer farm --reward-address $SUBSPACE_WALLET path=$SUBSPACE_FARM_PATH,size=\"$PLOT_SIZE\"
-Restart=on-failure
-LimitNOFILE=65535
-
-[Install]
-WantedBy=multi-user.target" > $HOME/subspaced-farmer.service
-
-sudo mv $HOME/subspaced.service /etc/systemd/system/
-sudo mv $HOME/subspaced-farmer.service /etc/systemd/system/
-sudo systemctl restart systemd-journald
-sudo systemctl daemon-reload
-sudo systemctl enable subspaced subspaced-farmer
-sudo systemctl restart subspaced
+systemctl start subspaced
 sleep 120
-sudo systemctl restart subspaced-farmer
+systemctl start subspaced-farmer
 
 echo "==================================================="
 echo -e '\n\e[42mChecking node status\e[0m\n' && sleep 1
