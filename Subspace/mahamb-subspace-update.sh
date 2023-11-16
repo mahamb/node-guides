@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sleep 1 && curl -s https://raw.githubusercontent.com/mahamb/logo/main/mahamb-logo.sh | bash && sleep 3
 cd $HOME
 systemctl stop subspaced-farmer
 sleep 120
