@@ -28,18 +28,18 @@ systemctl start subspaced-farmer
 
 echo "==================================================="
 echo -e '\n\e[42mChecking node status\e[0m\n' && sleep 1
-if [[ `service subspaced status | grep active` =~ "running" ]]; then
+if [[ `systemctl status subspaced | grep active` =~ "running" ]]; then
   echo -e "Your Subspace node has been \e[32mupdated and running\e[39m!"
-  echo -e "You can check node status by issuing the command \e[7mservice subspaced status\e[0m"
+  echo -e "You can check node status by issuing the command \e[7msystemctl status subspaced\e[0m"
   echo -e "Press \e[7mQ\e[0m for exit from status menu"
 else
   echo -e "Your Subspace node \e[31mwas not installed correctly\e[39m, please reinstall."
 fi
 echo "==================================================="
 echo -e '\n\e[42mChecking farmer status\e[0m\n' && sleep 1
-if [[ `service subspaced-farmer status | grep active` =~ "running" ]]; then
+if [[ `systemctl status subspaced-famer | grep active` =~ "running" ]]; then
   echo -e "Your Subspace farmer has been \e[32mupgraded and works\e[39m!"
-  echo -e "You can check node status by the issung command \e[7mservice subspaced-farmer status\e[0m"
+  echo -e "You can check node status by the issung command \e[7msystemctl status subspaced-famers\e[0m"
   echo -e "Press \e[7mQ\e[0m to exit from status menu"
 else
   echo -e "Your Subspace farmer \e[31mwas not installed correctly\e[39m, please reinstall or restart your farmer service."
