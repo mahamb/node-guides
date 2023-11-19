@@ -75,7 +75,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which data-avail) -d `pwd`/data --chain goldberg --validator --name $NODENAME
+ExecStart=$(which data-avail) -d /root/avail/data --chain goldberg --validator --name $NODENAME
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
