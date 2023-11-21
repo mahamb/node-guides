@@ -11,7 +11,7 @@ systemctl stop subspaced
 echo -e '\n\e[33mDeleting the old subspace bin files....\e[0m\n' && sleep 1
 rm -rf /usr/local/bin/*
 
-echo -e '\n\e[33mDownloading the and loading the latest subspace bin files....\e[0m\n' && sleep 1
+echo -e '\n\e[33mDownloading and loading the latest subspace bin files....\e[0m\n' && sleep 1
 #wget -O subspace-node https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-15/subspace-node-ubuntu-x86_64-skylake-gemini-3g-2023-nov-15
 #wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-15/subspace-farmer-ubuntu-x86_64-skylake-gemini-3g-2023-nov-15
 
