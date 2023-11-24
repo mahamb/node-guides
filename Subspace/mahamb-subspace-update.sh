@@ -21,8 +21,11 @@ echo -e '\n\e[33mDownloading and loading the latest subspace bin files....\e[0m\
 #wget -O subspace-node https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-19/subspace-node-ubuntu-x86_64-skylake-gemini-3g-2023-nov-19
 #wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-19/subspace-farmer-ubuntu-x86_64-skylake-gemini-3g-2023-nov-19
 
-wget -O subspace-node https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-20/subspace-node-ubuntu-x86_64-skylake-gemini-3g-2023-nov-20
-wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-20/subspace-farmer-ubuntu-x86_64-skylake-gemini-3g-2023-nov-20
+#wget -O subspace-node https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-20/subspace-node-ubuntu-x86_64-skylake-gemini-3g-2023-nov-20
+#wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-20/subspace-farmer-ubuntu-x86_64-skylake-gemini-3g-2023-nov-20
+
+wget -O subspace-node https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-21/subspace-node-ubuntu-x86_64-skylake-gemini-3g-2023-nov-21
+wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-21/subspace-farmer-ubuntu-x86_64-skylake-gemini-3g-2023-nov-21
 
 sudo chmod +x subspace-node subspace-farmer 
 sudo mv subspace-node /usr/local/bin/
