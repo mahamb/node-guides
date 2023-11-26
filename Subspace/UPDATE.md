@@ -1,4 +1,4 @@
-# Updating your Subspace Node to version gemini-3g-2023-nov-15
+# Updating your Subspace Node to version gemini-3g-2023-nov-21
 # For Advance CLI Skylake+ CPU
 ```
 wget -O mahamb-subspace-update.sh https://raw.githubusercontent.com/mahamb/node-guides/main/Subspace/mahamb-subspace-update.sh && chmod +x mahamb-subspace-update.sh && ./mahamb-subspace-update.sh
